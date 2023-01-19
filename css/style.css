@@ -292,3 +292,85 @@ div > input:not(input#user_recordar):focus{
   font-size: 28px;
   color: white;
 }
+.footer-terminos{
+  margin-top: 5px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#terminos-condiciones{
+  width: 30%;
+  justify-content: flex-start;
+  flex-direction: row;
+  text-align: left;
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  align-items: flex-end;
+}
+.enlaces-condiciones{
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  flex-wrap: nowrap;
+}
+#terminos-y-condiciones-enlace, #aviso-privacidad, #politica-anti-sobornos{
+  color: white;
+  margin-right: 5px;
+  font-size: 14px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+#grupo-lincon{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding-bottom: 0px;
+  padding-top: 20px;
+}
+#div_logo_Grupo{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  text-align:center;
+  flex-wrap: nowrap;
+}
+#text_grupo{
+  color: white;
+  margin-right: 5px;
+  font-size: 10px;
+}
+#image-grupo{
+  height: 45px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+#image-bandera{
+  height: 25px;
+  margin-top: 5px;
+}
+#derechos-reservados{
+  width: 30%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  padding-bottom: 0px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+#text_block{
+  color: #ffffff;
+  margin-right: 5px;
+  font-size: 12px;
+}
