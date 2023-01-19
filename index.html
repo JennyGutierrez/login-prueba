@@ -5,8 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Log in</title>
-  <!-- estilos -->
+  <!-- adicionales-->
   <link rel="stylesheet" href="/css/style.css">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/js/funciones.js"></script>
 </head>
 <body>
   <div class="card">
@@ -15,49 +17,25 @@
     </div>
     <div class="back">
       <form>
+        <div class="login-header">
+          <h1>Login</h1>
+        </div>
         <div class="usuario">
-          <label for="user">Usuario/Correo electrónico</label>
-          <input type="text" required="true" id="user" name="user_name">
+          <input type="text" id="user" name="user_name" placeholder="Usuario / Email">
         </div>
         <div class="password">
-          <label for="password">Contraseña</label> <br>
-          <input type="text" required="true" id="passwors" name="user_password">
+          <input type="password" id="password" name="user_password" placeholder="Password">
         </div>
-        <div>
-          <input type="checkbox" name="recordar" id="user_recordar"> Recordarme
-          <link rel="stylesheet" href="#">Olvide mi contraseña
+        <div class="user-enlaces">
+          <input type="checkbox" name="recordar" id="user_recordar"> <label for="user_recordar">Recordarme</label>
+          <link rel="stylesheet" href="#" id="user_olvidar">Olvide mi contraseña
         </div>
-        <div>
-          <button>Ingresar</button>
-          <Button>Registrarse</Button>
+        <div class="user-botones">
+          <button id="ingresar">Ingresar</button>
+          <Button id="registrarse">Registrarse</Button>
         </div>
       </form>
     </div>
-  </div> 
-  <!-- <div class="container">
-    <div class="container-tarjeta">
-      <div><img src="/imagenes/imagen1.png" alt="Gato y luciérnaga" title="gatoLuciernagas"></div>
-      <div class="container-formulario">
-        <form>
-          <div class="usuario">
-            <label for="user">Usuario/Correo electrónico</label>
-            <input type="text" required="true" id="user" name="user_name">
-          </div>
-          <div class="password">
-            <label for="password">Contraseña</label> <br>
-            <input type="text" required="true" id="passwors" name="user_password">
-          </div>
-          <div>
-            <input type="checkbox" name="recordar" id="user_recordar"> Recordarme
-            <link rel="stylesheet" href="#">Olvide mi contraseña
-          </div>
-          <div>
-            <button>Ingresar</button>
-            <Button>Registrarse</Button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div> -->
+  </div>
 </body>
 </html>

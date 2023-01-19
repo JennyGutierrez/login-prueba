@@ -45,13 +45,13 @@ div.front img{
   justify-content: center;
   align-items: center; */
 }
-
 .card .front{
   background-color:black;
   transform: perspective(500px) rotateY(0deg);
+  box-shadow: 0px 0px 10px 4px rgba(45, 30, 24, 1);
 }
 .card .back{
-  padding: 30px;
+  padding: 7%;
   background-color: rgba(250, 250, 250, 0.123);
   transform: perspective(500px) rotateY(180deg);
 }
@@ -60,97 +60,83 @@ div.front img{
 }
 .card:hover .back{
   transform: perspective(500px) rotateY(360deg);
+  box-shadow: 0px 0px 10px 4px rgba(206, 164, 92, 1);
 }
-/* .flip-container:hover .card {
-  transform: rotateY(180deg);
-}
-.card {
-  position: relative;
+div > input:not(input#user_recordar){
+  padding: 8px;
+  font-size: 18px;
+  border-radius: 8px;
+  border-style: solid;
   width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 1s;
-  transform-style: preserve-3d;
-} */
-/* .front, .back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 5rem;
-} */
-/* .flip-container {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-} */
-/* .card {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 1s;
-  transform-style: preserve-3d;
+  border-color: #cea45c;
+  border-width: 3px;
+  /* transition-property: opacity, left, top, height;
+  transition-duration: 3s, 5s; */
 }
-.flip-container:hover .card {
-  transform: rotateY(180deg);
-} */
-/* .front, .back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 5rem;
-} */
-/* .front {
-  background-color: #ff0000;
-  color: #fff;
-  
-} */
-/* .back {
-  background-color: #0000ff;
-  color: white;
-  transform: rotateY(180deg);
-} */
-/* .container{
-  display: flex;
-  justify-content:center;
-  align-items: center;
-} */
-/* 
-.container{
-  background-color: #351330;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%233c2b42'/%3E%3Cstop offset='1' stop-color='%233c2b42' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%234d525d'/%3E%3Cstop offset='1' stop-color='%234d525d' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2353696f'/%3E%3Cstop offset='1' stop-color='%2353696f' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23351330'/%3E%3Cstop offset='1' stop-color='%23351330' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23424254'/%3E%3Cstop offset='1' stop-color='%23424254' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2364908A'/%3E%3Cstop offset='1' stop-color='%2364908A' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover;
-  min-height: 100vh;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+div > input:not(input#user_recordar):focus{
+  border-color: #B53C22;
+  box-shadow: 0px 0px 6px 2px rgba(181, 60, 34, 1);
+  outline: none;
+  transition: all 0.5s;
 }
-.container-tarjeta{
-  background-color: rgba(250, 250, 250, 0.123);
-  box-shadow: 0px 1px 11px 6px #e3cf9ec4;
-  width: 700px;
-  height: 470px;
-
-  border-radius: 13px;
+.usuario, .password{
+  margin-bottom: 10px;
+}
+.user-enlaces{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  font-size: 17px;
+  color:  #2d1e18;
+  font-weight: bolder;
+  cursor: pointer;
 }
-[title~="gatoLuciernagas"]{
-  width: 100%;
-  border-radius: 13px 0px 0px 13px; 
-}
-form{
+.user-botones{
   display: flex;
   flex-direction: column;
-  align-items: center;
-} */
+  justify-content: center;
+  padding: 5%;
+}
+.user-botones button{
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+#ingresar{
+  background-color: #5e4035;
+  width: 100%;
+  margin-bottom: 3%;
+}
+#ingresar:hover{
+  background-color: #83604d;
+  transition: ease-in-out 0.5s;
+}
+#registrarse{
+  background-color: #49393c;
+  width: 100%;
+}
+#registrarse:hover{
+  background-color: #6b644b;
+  transition: ease-in-out 0.5s;
+}
+.login-header{
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: #2d1e18 solid;
+  padding: 15px;
+}
+#user_recordar{
+    cursor: pointer;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 2px solid  #f4eccb;
+    transition: background-color 0.2s ease-in-out;
+}
+#user_recordar:checked {
+  background-color: #b53c22;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+}
